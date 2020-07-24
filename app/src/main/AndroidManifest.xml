@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.logapps.foods_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="Food4All"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".charity.Charity_rateActivity"/>
+        <activity android:name=".person.Person_rateActivity" />
+        <activity android:name=".rest.Rest_ratingActivity" />
+        <activity android:name=".person.MyPostsDetails_Activity" />
+        <activity android:name=".charity.Charity_profile_Activity" />
+        <activity android:name=".rest.Rest_Profile_Activity" />
+        <activity android:name=".person.Profile_Activity" />
+        <activity android:name=".rest.Rest_Home_Activity" />
+        <activity android:name=".charity.Charity_Home_Activity" />
+        <activity android:name=".person.Person_Home_Activity" />
+        <activity android:name=".charity.Charity_Register" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".rest.Rest_Register" />
+        <activity android:name=".person.Person_Register" />
+        <activity android:name=".charity.Charity_login_Activity" />
+        <activity android:name=".rest.Rest_login_Activity" />
+        <activity android:name=".person.Person_login_Activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

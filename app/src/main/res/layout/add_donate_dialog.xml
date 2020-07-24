@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/d_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Your Name"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/dia_t_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/addimg"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Donate details"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/d_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Address"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/d_call"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="match_parent"
+            android:hint="Phone number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/add_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Post Donate"
+        android:textAllCaps="false"
+        android:fontFamily="@font/geo"
+        android:backgroundTint="@color/green"
+        android:textColor="#000"
+        android:textSize="14dp"
+        />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
